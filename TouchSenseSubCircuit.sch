@@ -1,0 +1,261 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tps562210
+LIBS:senior_design
+LIBS:Senior_Design-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AT42QT1010/1011 U?
+U 1 1 5ADF8B40
+P 5100 3250
+F 0 "U?" H 5100 3600 60  0000 C CNN
+F 1 "AT42QT1010/1011" H 5100 2900 60  0000 C CNN
+F 2 "" H 4950 3150 60  0001 C CNN
+F 3 "" H 4950 3150 60  0001 C CNN
+	1    5100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CapPad SW?
+U 1 1 5ADF8B47
+P 6750 3450
+F 0 "SW?" H 7000 3550 50  0000 L CNN
+F 1 "CapPad" H 6950 3300 50  0000 L CNN
+F 2 "" H 6788 3300 50  0001 C CNN
+F 3 "" H 6750 3450 50  0001 C CNN
+	1    6750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5ADF8B4E
+P 6550 2850
+F 0 "R?" V 6630 2850 50  0000 C CNN
+F 1 "10K" V 6550 2850 50  0000 C CNN
+F 2 "" V 6480 2850 50  0001 C CNN
+F 3 "" H 6550 2850 50  0001 C CNN
+	1    6550 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5ADF8B55
+P 6200 3000
+F 0 "C?" H 6225 3100 50  0000 L CNN
+F 1 "22uF" H 6225 2900 50  0000 L CNN
+F 2 "" H 6238 2850 50  0001 C CNN
+F 3 "" H 6200 3000 50  0001 C CNN
+	1    6200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2850 6400 2850
+Wire Wire Line
+	5700 3150 5900 3150
+Wire Wire Line
+	5900 3150 5900 2850
+Connection ~ 6200 2850
+Wire Wire Line
+	5700 3250 6200 3250
+Wire Wire Line
+	6200 3250 6200 3150
+Wire Wire Line
+	6700 2850 6750 2850
+Wire Wire Line
+	6750 2850 6750 3200
+Wire Wire Line
+	5550 3800 6000 3800
+Text HLabel 5550 3800 0    60   Input ~ 0
+VDD
+$Comp
+L GND #PWR?
+U 1 1 5ADF8B66
+P 6500 3800
+F 0 "#PWR?" H 6500 3550 50  0001 C CNN
+F 1 "GND" H 6500 3650 50  0000 C CNN
+F 2 "" H 6500 3800 50  0001 C CNN
+F 3 "" H 6500 3800 50  0001 C CNN
+	1    6500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3800 6500 3800
+$Comp
+L GS3 J?
+U 1 1 5ADF8B6D
+P 6100 3650
+F 0 "J?" H 6150 3850 50  0000 C CNN
+F 1 "GS3" H 6150 3451 50  0000 C CNN
+F 2 "Connectors:GS3" V 6188 3576 50  0001 C CNN
+F 3 "" H 6100 3650 50  0001 C CNN
+	1    6100 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5ADF8B74
+P 5950 3350
+F 0 "R?" V 6030 3350 50  0000 C CNN
+F 1 "1K" V 5950 3350 50  0000 C CNN
+F 2 "" V 5880 3350 50  0001 C CNN
+F 3 "" H 5950 3350 50  0001 C CNN
+	1    5950 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3350 6100 3500
+Wire Wire Line
+	5800 3350 5700 3350
+$Comp
+L C C?
+U 1 1 5ADF8B7D
+P 4000 3300
+F 0 "C?" H 4025 3400 50  0000 L CNN
+F 1 "0.1uF" H 4025 3200 50  0000 L CNN
+F 2 "" H 4038 3150 50  0001 C CNN
+F 3 "" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ADF8B84
+P 6750 3700
+F 0 "#PWR?" H 6750 3450 50  0001 C CNN
+F 1 "GND" H 6750 3550 50  0000 C CNN
+F 2 "" H 6750 3700 50  0001 C CNN
+F 3 "" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3450 4000 3550
+Wire Wire Line
+	4000 3550 4350 3550
+Wire Wire Line
+	4350 3550 4350 3250
+Wire Wire Line
+	4350 3250 4500 3250
+$Comp
+L GND #PWR?
+U 1 1 5ADF8B8E
+P 4000 3550
+F 0 "#PWR?" H 4000 3300 50  0001 C CNN
+F 1 "GND" H 4000 3400 50  0000 C CNN
+F 2 "" H 4000 3550 50  0001 C CNN
+F 3 "" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 4500 3150
+Wire Wire Line
+	4000 3150 4000 2950
+Text HLabel 4000 2950 0    60   Input ~ 0
+VDD
+Wire Wire Line
+	4500 3350 4500 3950
+Wire Wire Line
+	4500 3950 4200 3950
+Text Label 4200 3950 0    60   ~ 0
+OUT1
+Text HLabel 4200 3950 0    60   Input ~ 0
+OUT1
+Text Label 4000 4150 0    60   ~ 0
+OUT1
+$Comp
+L GS2 J?
+U 1 1 5ADF8B9C
+P 4550 4150
+F 0 "J?" H 4650 4300 50  0000 C CNN
+F 1 "GS2" H 4650 4001 50  0000 C CNN
+F 2 "Connectors:GS2" V 4624 4150 50  0001 C CNN
+F 3 "" H 4550 4150 50  0001 C CNN
+	1    4550 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 5ADF8BA3
+P 5150 4150
+F 0 "D?" H 5150 4250 50  0000 C CNN
+F 1 "LED" H 5150 4050 50  0000 C CNN
+F 2 "" H 5150 4150 50  0001 C CNN
+F 3 "" H 5150 4150 50  0001 C CNN
+	1    5150 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5ADF8BAA
+P 5700 4150
+F 0 "R?" V 5780 4150 50  0000 C CNN
+F 1 "1K" V 5700 4150 50  0000 C CNN
+F 2 "" V 5630 4150 50  0001 C CNN
+F 3 "" H 5700 4150 50  0001 C CNN
+	1    5700 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 4150 5300 4150
+Wire Wire Line
+	5000 4150 4750 4150
+Wire Wire Line
+	4350 4150 4000 4150
+$Comp
+L GND #PWR?
+U 1 1 5ADF8BB4
+P 6100 4150
+F 0 "#PWR?" H 6100 3900 50  0001 C CNN
+F 1 "GND" H 6100 4000 50  0000 C CNN
+F 2 "" H 6100 4150 50  0001 C CNN
+F 3 "" H 6100 4150 50  0001 C CNN
+	1    6100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4150 5850 4150
+Text Notes 5100 4500 0    60   ~ 0
+suggested LED\nT77K-J1L2-1-0-2-R18-Z
+$EndSCHEMATC

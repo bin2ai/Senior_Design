@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 4 14
 Title ""
 Date ""
 Rev ""
@@ -45,144 +45,94 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L TTP223-ASB U?
-U 1 1 5ACCF757
-P 5400 3800
-F 0 "U?" H 5400 4250 60  0000 C CNN
-F 1 "TTP223-ASB" H 5400 3350 60  0000 C CNN
-F 2 "" H 5400 3750 60  0001 C CNN
-F 3 "" H 5400 3750 60  0001 C CNN
-	1    5400 3800
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4900 4050
-NoConn ~ 4900 4150
-NoConn ~ 5900 4050
-NoConn ~ 5900 4150
-$Comp
-L CONN_01X01 J?
-U 1 1 5ACCF762
-P 4050 3950
-F 0 "J?" H 4050 4050 50  0000 C CNN
-F 1 "Sense Pad" V 4150 3950 50  0000 C CNN
-F 2 "" H 4050 3950 50  0001 C CNN
-F 3 "" H 4050 3950 50  0001 C CNN
-	1    4050 3950
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C?
-U 1 1 5ACCF769
-P 4400 4100
-F 0 "C?" H 4425 4200 50  0000 L CNN
-F 1 "C" H 4425 4000 50  0000 L CNN
-F 2 "" H 4438 3950 50  0001 C CNN
-F 3 "" H 4400 4100 50  0001 C CNN
-	1    4400 4100
-	1    0    0    -1  
-$EndComp
+$Sheet
+S 3150 1600 1150 1100
+U 5ADF8777
+F0 "TouchSenseSubCircuit" 60
+F1 "TouchSenseSubCircuit.sch" 60
+F2 "VDD" I L 3150 1850 60 
+F3 "OUT1" I L 3150 2000 60 
+$EndSheet
+$Sheet
+S 5750 1600 1150 1100
+U 5ADF8C6C
+F0 "TouchSenseSubCircuit" 60
+F1 "TouchSenseSubCircuit.sch" 60
+F2 "VDD" I L 5750 1750 60 
+F3 "OUT1" I L 5750 1900 60 
+$EndSheet
+$Sheet
+S 4450 3250 1150 1100
+U 5ADF8C82
+F0 "TouchSenseSubCircuit" 60
+F1 "TouchSenseSubCircuit.sch" 60
+F2 "VDD" I L 4450 3450 60 
+F3 "OUT1" I L 4450 3600 60 
+$EndSheet
+$Sheet
+S 5750 4950 1150 1100
+U 5ADF8C84
+F0 "TouchSenseSubCircuit" 60
+F1 "TouchSenseSubCircuit.sch" 60
+F2 "VDD" I L 5750 5150 60 
+F3 "OUT1" I L 5750 5300 60 
+$EndSheet
+$Sheet
+S 3150 4900 1150 1100
+U 5ADF8DE4
+F0 "TouchSenseSubCircuit" 60
+F1 "TouchSenseSubCircuit.sch" 60
+F2 "VDD" I L 3150 5050 60 
+F3 "OUT1" I L 3150 5200 60 
+$EndSheet
+Text Notes 4500 3900 0    100  ~ 0
+middle button
+Text Notes 3350 2200 0    100  ~ 0
+TOP LEFT
+Text Notes 5900 2200 0    100  ~ 0
+TOP RIGHT
+Text Notes 5800 5600 0    100  ~ 0
+BOTTOM RIGHT
+Text Notes 3150 5500 0    100  ~ 0
+BOTTOM LEFT
 Wire Wire Line
-	4250 3950 4900 3950
+	3150 2000 2850 2000
 Wire Wire Line
-	6650 3750 5900 3750
-$Comp
-L GND #PWR?
-U 1 1 5ACCF772
-P 4400 4250
-F 0 "#PWR?" H 4400 4000 50  0001 C CNN
-F 1 "GND" H 4400 4100 50  0000 C CNN
-F 2 "" H 4400 4250 50  0001 C CNN
-F 3 "" H 4400 4250 50  0001 C CNN
-	1    4400 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5ACCF778
-P 6650 3900
-F 0 "#PWR?" H 6650 3650 50  0001 C CNN
-F 1 "GND" H 6650 3750 50  0000 C CNN
-F 2 "" H 6650 3900 50  0001 C CNN
-F 3 "" H 6650 3900 50  0001 C CNN
-	1    6650 3900
-	1    0    0    -1  
-$EndComp
+	5750 1750 5450 1750
 Wire Wire Line
-	6650 3550 6650 3900
-$Comp
-L C C?
-U 1 1 5ACCF77F
-P 6650 3400
-F 0 "C?" H 6675 3500 50  0000 L CNN
-F 1 "C" H 6675 3300 50  0000 L CNN
-F 2 "" H 6688 3250 50  0001 C CNN
-F 3 "" H 6650 3400 50  0001 C CNN
-	1    6650 3400
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 3750
+	5750 1900 5450 1900
 Wire Wire Line
-	6650 3650 5900 3650
-Connection ~ 6650 3650
+	4450 3450 4150 3450
 Wire Wire Line
-	6300 3550 5900 3550
+	4450 3600 4150 3600
 Wire Wire Line
-	6300 3000 6300 3550
+	5750 5150 5450 5150
 Wire Wire Line
-	6150 3250 6650 3250
+	5750 5300 5450 5300
 Wire Wire Line
-	5900 3450 6150 3450
+	3150 5200 2700 5200
 Wire Wire Line
-	6150 3450 6150 3250
-Connection ~ 6300 3250
+	3150 5050 2700 5050
 Wire Wire Line
-	6300 3100 4700 3100
-Wire Wire Line
-	4700 3100 4700 3550
-Wire Wire Line
-	4700 3550 4900 3550
-$Comp
-L GND #PWR?
-U 1 1 5ACCF792
-P 4700 3800
-F 0 "#PWR?" H 4700 3550 50  0001 C CNN
-F 1 "GND" H 4700 3650 50  0000 C CNN
-F 2 "" H 4700 3800 50  0001 C CNN
-F 3 "" H 4700 3800 50  0001 C CNN
-	1    4700 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4900 3750 4750 3750
-Wire Wire Line
-	4750 3750 4750 3850
-Wire Wire Line
-	4750 3800 4700 3800
-Wire Wire Line
-	4750 3850 4900 3850
-Connection ~ 4750 3800
-Connection ~ 4400 3950
-Wire Wire Line
-	4900 3650 4400 3650
-NoConn ~ 4400 3650
-Text Notes 3600 3550 0    60   ~ 0
-may add a reset line\n
-Connection ~ 4400 3650
-Text Notes 4700 3000 0    60   ~ 0
-check data sheet to confirm pins\n2,3,4,5,15,14,
-Wire Wire Line
-	6050 3850 5900 3850
-Wire Wire Line
-	6050 3950 5900 3950
-NoConn ~ 4900 3450
-Wire Wire Line
-	6300 3000 6250 3000
-Connection ~ 6300 3100
-Text HLabel 6250 3000 0    60   Input ~ 0
+	2850 1850 3150 1850
+Text HLabel 2850 1850 0    60   Input ~ 0
 VDD
-Text HLabel 6050 3850 2    60   Input ~ 0
-QPDQ
-Text HLabel 6050 3950 2    60   Input ~ 0
-Q
+Text HLabel 2850 2000 0    60   Input ~ 0
+OUT1
+Text HLabel 5450 1900 0    60   Input ~ 0
+OUT2
+Text HLabel 4150 3600 0    60   Input ~ 0
+OUT3
+Text HLabel 2700 5200 0    60   Input ~ 0
+OUT4
+Text HLabel 5450 5300 0    60   Input ~ 0
+OUT5
+Text HLabel 4150 3450 0    60   Input ~ 0
+VDD
+Text HLabel 5450 1750 0    60   Input ~ 0
+VDD
+Text HLabel 5450 5150 0    60   Input ~ 0
+VDD
+Text HLabel 2700 5050 0    60   Input ~ 0
+VDD
 $EndSCHEMATC
