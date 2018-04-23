@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -123,7 +123,11 @@ $EndComp
 Wire Wire Line
 	1600 3850 1550 3850
 Wire Wire Line
-	1550 3850 1550 4100
+	1550 3850 1550 3950
+Wire Wire Line
+	1550 3950 1550 4050
+Wire Wire Line
+	1550 4050 1550 4100
 Wire Wire Line
 	1600 4050 1550 4050
 Connection ~ 1550 4050
@@ -184,11 +188,15 @@ $EndComp
 Wire Wire Line
 	4550 2250 4550 2200
 Wire Wire Line
-	3950 2200 4600 2200
+	3950 2200 4550 2200
+Wire Wire Line
+	4550 2200 4600 2200
 Wire Wire Line
 	4550 2550 4550 2650
 Wire Wire Line
-	3950 2650 4600 2650
+	3950 2650 4550 2650
+Wire Wire Line
+	4550 2650 4600 2650
 $Comp
 L GND #PWR?
 U 1 1 5ACA062F
@@ -201,7 +209,9 @@ F 3 "" H 4900 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 2200 4900 2850
+	4900 2200 4900 2650
+Wire Wire Line
+	4900 2650 4900 2850
 Connection ~ 4900 2650
 Wire Wire Line
 	3950 2200 3950 2350
@@ -238,11 +248,15 @@ F 3 "" H 1300 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 1750 1300 2050
+	1300 1750 1300 1850
+Wire Wire Line
+	1300 1850 1300 2050
 Wire Wire Line
 	1300 1850 1600 1850
 Wire Wire Line
-	1200 1750 1600 1750
+	1200 1750 1300 1750
+Wire Wire Line
+	1300 1750 1600 1750
 Connection ~ 1300 1850
 Connection ~ 1300 1750
 Text GLabel 7500 2000 2    60   Input ~ 0
@@ -344,7 +358,9 @@ F 3 "" H 9200 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 1600 9700 1600
+	9200 1600 9500 1600
+Wire Wire Line
+	9500 1600 9700 1600
 $Comp
 L POT RV?
 U 1 1 5ACAE881
@@ -427,7 +443,11 @@ LCD_RS
 NoConn ~ 9700 3000
 NoConn ~ 9700 3100
 Wire Wire Line
-	3500 3200 5450 3200
+	3500 3200 4950 3200
+Wire Wire Line
+	4950 3200 5250 3200
+Wire Wire Line
+	5250 3200 5450 3200
 Text GLabel 6450 1800 0    60   Input ~ 0
 3v3_En
 Text GLabel 6450 3000 0    60   Input ~ 0
@@ -474,7 +494,9 @@ F 3 "" H 2700 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2400 5500 2900 5500
+	2400 5500 2700 5500
+Wire Wire Line
+	2700 5500 2900 5500
 Connection ~ 2700 5500
 $Comp
 L GND #PWR?
@@ -587,18 +609,27 @@ F5 "STATE" I L 7600 6300 60
 F6 "EN" I L 7600 6200 60 
 $EndSheet
 $Sheet
-S 3850 6400 800  750 
+S 4800 6150 800  750 
 U 5ADF2040
 F0 "USB" 60
 F1 "USB.sch" 60
-F2 "5V" I L 3850 6600 60 
+F2 "5V" I L 4800 6350 60 
 $EndSheet
 $Sheet
-S 5150 6300 750  800 
+S 6050 6100 750  800 
 U 5AE32BAA
 F0 "AdjustKnob" 60
 F1 "AdustKnob.sch" 60
-F2 "knobRead" I L 5150 6600 60 
-F3 "Vin" I L 5150 6500 60 
+F2 "knobRead" I L 6050 6400 60 
+F3 "Vin" I L 6050 6300 60 
+$EndSheet
+$Sheet
+S 2000 6350 1000 950 
+U 5ADE6DB9
+F0 "MotionSense" 60
+F1 "motionSense.sch" 60
+F2 "Signal_1" I L 2000 6900 60 
+F3 "VCC" I L 2000 6650 60 
+F4 "Signal_2" I L 2000 7000 60 
 $EndSheet
 $EndSCHEMATC
