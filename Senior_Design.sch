@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -169,49 +169,41 @@ Text GLabel 1800 2300 0    60   Input ~ 0
 $Comp
 L R R?
 U 1 1 5ACA22DA
-P 1100 2600
-F 0 "R?" V 1180 2600 50  0000 C CNN
-F 1 "10k" V 1100 2600 50  0000 C CNN
-F 2 "" V 1030 2600 50  0001 C CNN
-F 3 "" H 1100 2600 50  0001 C CNN
-	1    1100 2600
+P 1250 2450
+F 0 "R?" V 1330 2450 50  0000 C CNN
+F 1 "10k" V 1250 2450 50  0000 C CNN
+F 2 "" V 1180 2450 50  0001 C CNN
+F 3 "" H 1250 2450 50  0001 C CNN
+	1    1250 2450
 	-1   0    0    -1  
 $EndComp
 Text GLabel 1050 2300 0    60   Input ~ 0
 3V3-BUS
 Wire Wire Line
-	1050 2300 1100 2300
-Wire Wire Line
-	1100 2300 1100 2450
+	1050 2300 1250 2300
 $Comp
 L CONN_01X02 J?
 U 1 1 5ACA2B1B
-P 1200 3000
-F 0 "J?" H 1200 3150 50  0000 C CNN
-F 1 "RESET" V 1300 3000 50  0000 C CNN
-F 2 "" H 1200 3000 50  0001 C CNN
-F 3 "" H 1200 3000 50  0001 C CNN
-	1    1200 3000
+P 1450 3000
+F 0 "J?" H 1450 3150 50  0000 C CNN
+F 1 "RESET" V 1550 3000 50  0000 C CNN
+F 2 "" H 1450 3000 50  0001 C CNN
+F 3 "" H 1450 3000 50  0001 C CNN
+	1    1450 3000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 2750 1400 2950
-Connection ~ 1400 2750
 $Comp
 L GND #PWR?
 U 1 1 5ACA2CF3
-P 1400 3150
-F 0 "#PWR?" H 1400 2900 50  0001 C CNN
-F 1 "GND" H 1400 3000 50  0000 C CNN
-F 2 "" H 1400 3150 50  0001 C CNN
-F 3 "" H 1400 3150 50  0001 C CNN
-	1    1400 3150
+P 1650 3100
+F 0 "#PWR?" H 1650 2850 50  0001 C CNN
+F 1 "GND" H 1650 2950 50  0000 C CNN
+F 2 "" H 1650 3100 50  0001 C CNN
+F 3 "" H 1650 3100 50  0001 C CNN
+	1    1650 3100
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 3150 1400 3050
-Connection ~ 1100 2750
-Text GLabel 900  2750 0    60   Input ~ 0
+Text GLabel 800  2750 0    60   Input ~ 0
 RESET
 $Comp
 L CONN_02X03 J?
@@ -327,29 +319,29 @@ Wire Wire Line
 Connection ~ 12050 1200
 Text GLabel 12250 1500 0    60   Input ~ 0
 LCD_RS
-Text GLabel 4550 6200 2    60   Input ~ 0
+Text GLabel 4550 5400 2    60   Input ~ 0
 LCD_DB4
-Text GLabel 4550 6300 2    60   Input ~ 0
+Text GLabel 4550 5500 2    60   Input ~ 0
 LCD_DB5
-Text GLabel 4550 6400 2    60   Input ~ 0
+Text GLabel 4550 5600 2    60   Input ~ 0
 LCD_DB6
-Text GLabel 4550 6500 2    60   Input ~ 0
+Text GLabel 4550 4600 2    60   Input ~ 0
 LCD_DB7
-Text GLabel 4550 6100 2    60   Input ~ 0
+Text GLabel 4550 4500 2    60   Input ~ 0
 LCD_E
-Text GLabel 4550 6000 2    60   Input ~ 0
+Text GLabel 4550 4400 2    60   Input ~ 0
 LCD_RS
 NoConn ~ 12250 2600
 NoConn ~ 12250 2700
 Wire Wire Line
-	900  2750 1600 2750
+	1200 2750 1800 2750
 Text GLabel 8950 1900 0    60   Input ~ 0
 3v3_En
 Text GLabel 8950 3100 0    60   Input ~ 0
 5v_En
-Text GLabel 4550 5900 2    60   Input ~ 0
+Text GLabel 4550 4100 2    60   Input ~ 0
 5v_En
-Text GLabel 4550 5800 2    60   Input ~ 0
+Text GLabel 4550 4000 2    60   Input ~ 0
 3v3_En
 $Comp
 L WS2812B U?
@@ -422,7 +414,7 @@ Wire Wire Line
 	8700 8400 8700 8800
 Wire Wire Line
 	8700 8800 8500 8800
-Text GLabel 4550 5600 2    60   Input ~ 0
+Text GLabel 4550 4300 2    60   Input ~ 0
 LED_STATUS
 $Comp
 L CONN_01X03 U?
@@ -464,7 +456,7 @@ Text GLabel 7900 6800 0    60   Input ~ 0
 LEDS_Din
 Text GLabel 8500 8400 0    60   Input ~ 0
 LED_Din
-Text GLabel 4550 5500 2    60   Input ~ 0
+Text GLabel 4550 4200 2    60   Input ~ 0
 LEDS_Din
 $Sheet
 S 9950 5500 950  950 
@@ -479,30 +471,30 @@ F6 "OUT4" I L 9950 6150 60
 F7 "OUT5" I L 9950 6250 60 
 $EndSheet
 $Sheet
-S 12600 3150 850  1100
+S 6600 2900 850  1100
 U 5ACBFA0B
 F0 "LoadCell" 60
 F1 "LoadCell.sch" 60
-F2 "VDD" I L 12600 3250 60 
-F3 "DOUT" O L 12600 3350 60 
-F4 "PD_SCK" I L 12600 3450 60 
-F5 "E+" I L 12600 3550 60 
-F6 "E-" I L 12600 3650 60 
-F7 "A-" I L 12600 3750 60 
-F8 "A+" I L 12600 3850 60 
-F9 "B+" I L 12600 4050 60 
-F10 "B-" I L 12600 4150 60 
+F2 "VDD" I L 6600 3000 60 
+F3 "DOUT" O L 6600 3100 60 
+F4 "PD_SCK" I L 6600 3200 60 
+F5 "E+" I L 6600 3300 60 
+F6 "E-" I L 6600 3400 60 
+F7 "A-" I L 6600 3500 60 
+F8 "A+" I L 6600 3600 60 
+F9 "B+" I L 6600 3800 60 
+F10 "B-" I L 6600 3900 60 
 $EndSheet
 $Sheet
-S 12650 4500 900  850 
+S 7300 4500 900  850 
 U 5ADDE9BE
 F0 "Bluetooth" 60
 F1 "Bluetooth.sch" 60
-F2 "RXD" I L 12650 4950 60 
-F3 "3.3V" I L 12650 4650 60 
-F4 "TXD" O L 12650 4850 60 
-F5 "STATE" I L 12650 5250 60 
-F6 "EN" I L 12650 5150 60 
+F2 "RXD" I L 7300 4950 60 
+F3 "3.3V" I L 7300 4650 60 
+F4 "TXD" O L 7300 4850 60 
+F5 "STATE" I L 7300 5250 60 
+F6 "EN" I L 7300 5150 60 
 $EndSheet
 $Sheet
 S 11400 3800 800  750 
@@ -587,9 +579,9 @@ F 3 "" H 1000 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 3100 1600 3100
+	1950 3100 1800 3100
 Wire Wire Line
-	1600 3100 1600 2750
+	1800 3100 1800 2750
 $Comp
 L C C?
 U 1 1 5AE3DB6A
@@ -622,15 +614,15 @@ Text GLabel 9950 6950 0    60   Input ~ 0
 3V3-BUS
 Text GLabel 9950 5750 0    60   Input ~ 0
 3V3-BUS
-Text GLabel 4550 5000 2    60   Input ~ 0
+Text GLabel 4550 4900 2    60   Input ~ 0
 touch_TL
-Text GLabel 4550 5100 2    60   Input ~ 0
+Text GLabel 4550 5000 2    60   Input ~ 0
 touch_TR
-Text GLabel 4550 5200 2    60   Input ~ 0
+Text GLabel 4550 5100 2    60   Input ~ 0
 touch_TC
-Text GLabel 4550 5300 2    60   Input ~ 0
+Text GLabel 4550 5200 2    60   Input ~ 0
 touch_BL
-Text GLabel 4550 5400 2    60   Input ~ 0
+Text GLabel 4550 5300 2    60   Input ~ 0
 touch_BR
 Text GLabel 9950 5850 0    60   Input ~ 0
 touch_TL
@@ -642,4 +634,84 @@ Text GLabel 9950 6150 0    60   Input ~ 0
 touch_BL
 Text GLabel 9950 6250 0    60   Input ~ 0
 touch_BR
+Text GLabel 7300 5150 0    60   Input ~ 0
+BT_EN
+Text GLabel 7300 5250 0    60   Input ~ 0
+BT_STATE
+Text GLabel 7300 4950 0    60   Input ~ 0
+MCU_TX2
+Text GLabel 7300 4850 0    60   Input ~ 0
+MCU_RX2
+Text GLabel 7300 4650 0    60   Input ~ 0
+3V3-BUS
+Text GLabel 4550 6200 2    60   Input ~ 0
+BT_STATE
+Text GLabel 4550 6300 2    60   Input ~ 0
+BT_EN
+Text GLabel 4550 6100 2    60   Input ~ 0
+MCU_TX2
+Text GLabel 4550 6000 2    60   Input ~ 0
+MCU_RX2
+Text GLabel 11400 4000 0    60   Input ~ 0
+5V-BUS
+Text GLabel 6600 3000 0    60   Input ~ 0
+5V-BUS
+Text GLabel 6600 3100 0    60   Input ~ 0
+SCALE_DOUT
+Text GLabel 6600 3200 0    60   Input ~ 0
+SCALE_PD_SCK
+Text GLabel 6600 3300 0    60   Input ~ 0
+SCALE_E+
+Text GLabel 6600 3400 0    60   Input ~ 0
+SCALE_E-
+Text GLabel 6600 3500 0    60   Input ~ 0
+SCALE_A-
+Text GLabel 6600 3600 0    60   Input ~ 0
+SCALE_A+
+Text GLabel 4550 3100 2    60   Input ~ 0
+SCALE_DOUT
+Text GLabel 4550 3200 2    60   Input ~ 0
+SCALE_PD_SCK
+$Sheet
+S 12050 5350 1150 1250
+U 5AE5BB67
+F0 "USB-Serial" 60
+F1 "USB-Serial.sch" 60
+F2 "3.3V" I L 12050 5500 60 
+F3 "5V" I L 12050 5600 60 
+F4 "DTR" I L 12050 5850 60 
+F5 "RXD" I L 12050 6000 60 
+F6 "TXD" I L 12050 6100 60 
+$EndSheet
+Text GLabel 12050 5600 0    60   Input ~ 0
+5V-BUS
+Text GLabel 12050 5500 0    60   Input ~ 0
+3v3_En
+Wire Wire Line
+	1650 3050 1650 3100
+Wire Wire Line
+	1650 2950 1650 2750
+Connection ~ 1650 2750
+Wire Wire Line
+	1250 2600 1250 2750
+Connection ~ 1250 2750
+$Comp
+L C C?
+U 1 1 5AE69844
+P 1050 2750
+F 0 "C?" H 1075 2850 50  0000 L CNN
+F 1 "0.1uF" V 1200 2500 50  0000 L CNN
+F 2 "" H 1088 2600 50  0001 C CNN
+F 3 "" H 1050 2750 50  0001 C CNN
+	1    1050 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  2750 800  2750
+Text GLabel 12050 5850 0    60   Input ~ 0
+RESET
+Text GLabel 12050 6100 0    60   Input ~ 0
+MCU_TX1
+Text GLabel 12050 6000 0    60   Input ~ 0
+MCU_RX1
 $EndSCHEMATC
