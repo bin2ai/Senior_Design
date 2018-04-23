@@ -1,0 +1,327 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tps562210
+LIBS:senior_design
+LIBS:Senior_Design-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9300 3600 2    60   Input ~ 0
+3V-BUS
+$Comp
+L C C?
+U 1 1 5AC983C9
+P 3850 3750
+F 0 "C?" H 3875 3850 50  0000 L CNN
+F 1 "0.1uF" H 3875 3650 50  0000 L CNN
+F 2 "" H 3888 3600 50  0001 C CNN
+F 3 "" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC9854A
+P 4200 3750
+F 0 "C?" H 4225 3850 50  0000 L CNN
+F 1 "10uF" H 4225 3650 50  0000 L CNN
+F 2 "" H 4238 3600 50  0001 C CNN
+F 3 "" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC98577
+P 4550 3750
+F 0 "C?" H 4575 3850 50  0000 L CNN
+F 1 "10uF" H 4575 3650 50  0000 L CNN
+F 2 "" H 4588 3600 50  0001 C CNN
+F 3 "" H 4550 3750 50  0001 C CNN
+	1    4550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5AC985FD
+P 5200 3700
+F 0 "R?" V 5280 3700 50  0000 C CNN
+F 1 "10.0k" V 5200 3700 50  0000 C CNN
+F 2 "" V 5130 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC9874C
+P 5300 4050
+F 0 "C?" H 5325 4150 50  0000 L CNN
+F 1 "8200pF" H 5325 3950 50  0000 L CNN
+F 2 "" H 5338 3900 50  0001 C CNN
+F 3 "" H 5300 4050 50  0001 C CNN
+	1    5300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AC98797
+P 3850 4050
+F 0 "#PWR?" H 3850 3800 50  0001 C CNN
+F 1 "GND" H 3850 3900 50  0000 C CNN
+F 2 "" H 3850 4050 50  0001 C CNN
+F 3 "" H 3850 4050 50  0001 C CNN
+	1    3850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AC987FB
+P 5300 4200
+F 0 "#PWR?" H 5300 3950 50  0001 C CNN
+F 1 "GND" H 5300 4050 50  0000 C CNN
+F 2 "" H 5300 4200 50  0001 C CNN
+F 3 "" H 5300 4200 50  0001 C CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS562210 U?
+U 1 1 5AC9892C
+P 5850 3800
+F 0 "U?" H 5850 4200 60  0000 C CNN
+F 1 "TPS562210" H 5850 3500 60  0000 C CNN
+F 2 "" H 5850 3800 60  0001 C CNN
+F 3 "" H 5850 3800 60  0001 C CNN
+	1    5850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC98D9E
+P 6650 3600
+F 0 "C?" H 6675 3700 50  0000 L CNN
+F 1 "0.1uF" H 6675 3500 50  0000 L CNN
+F 2 "" H 6688 3450 50  0001 C CNN
+F 3 "" H 6650 3600 50  0001 C CNN
+	1    6650 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AC98DE6
+P 7350 3750
+F 0 "R?" V 7430 3750 50  0000 C CNN
+F 1 "100k" V 7350 3750 50  0000 C CNN
+F 2 "" V 7280 3750 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC98EBE
+P 7750 3750
+F 0 "C?" H 7775 3850 50  0000 L CNN
+F 1 "22uF" H 7775 3650 50  0000 L CNN
+F 2 "" H 7788 3600 50  0001 C CNN
+F 3 "" H 7750 3750 50  0001 C CNN
+	1    7750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5AC991BB
+P 9000 3750
+F 0 "R?" V 9080 3750 50  0000 C CNN
+F 1 "33.2k" V 8900 3750 50  0000 C CNN
+F 2 "" V 8930 3750 50  0001 C CNN
+F 3 "" H 9000 3750 50  0001 C CNN
+	1    9000 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AC99213
+P 9000 4150
+F 0 "R?" V 9080 4150 50  0000 C CNN
+F 1 "10k" V 9000 4150 50  0000 C CNN
+F 2 "" V 8930 4150 50  0001 C CNN
+F 3 "" H 9000 4150 50  0001 C CNN
+	1    9000 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AC99319
+P 7750 3950
+F 0 "#PWR?" H 7750 3700 50  0001 C CNN
+F 1 "GND" H 7750 3800 50  0000 C CNN
+F 2 "" H 7750 3950 50  0001 C CNN
+F 3 "" H 7750 3950 50  0001 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AC99546
+P 9000 4350
+F 0 "#PWR?" H 9000 4100 50  0001 C CNN
+F 1 "GND" H 9000 4200 50  0000 C CNN
+F 2 "" H 9000 4350 50  0001 C CNN
+F 3 "" H 9000 4350 50  0001 C CNN
+	1    9000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 5AC998DB
+P 7100 3600
+F 0 "L?" V 7050 3600 50  0000 C CNN
+F 1 "2.2uH" V 7175 3600 50  0000 C CNN
+F 2 "" H 7100 3600 50  0001 C CNN
+F 3 "" H 7100 3600 50  0001 C CNN
+	1    7100 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 4050 3850 3900
+Wire Wire Line
+	3850 3900 4550 3900
+Connection ~ 4200 3900
+Wire Wire Line
+	3450 3600 5450 3600
+Connection ~ 4200 3600
+Connection ~ 3850 3600
+Wire Wire Line
+	5350 3700 5450 3700
+Wire Wire Line
+	5300 3900 5450 3900
+Connection ~ 4550 3600
+Wire Wire Line
+	9000 4350 9000 4300
+Wire Wire Line
+	9000 4000 9000 3900
+Wire Wire Line
+	7750 3900 8450 3900
+Connection ~ 8100 3900
+Wire Wire Line
+	7750 3950 7750 3900
+Wire Wire Line
+	6950 3600 6800 3600
+Wire Wire Line
+	6500 3600 6250 3600
+Wire Wire Line
+	6250 3700 6400 3700
+Wire Wire Line
+	6400 3700 6400 3600
+Connection ~ 6400 3600
+Wire Wire Line
+	7250 3600 9300 3600
+Connection ~ 7350 3600
+Wire Wire Line
+	7350 3900 6750 3900
+Wire Wire Line
+	6750 3900 6750 3800
+Wire Wire Line
+	6750 3800 6250 3800
+$Comp
+L GND #PWR?
+U 1 1 5AC99D56
+P 6450 4000
+F 0 "#PWR?" H 6450 3750 50  0001 C CNN
+F 1 "GND" H 6450 3850 50  0000 C CNN
+F 2 "" H 6450 4000 50  0001 C CNN
+F 3 "" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4000 6250 4000
+Connection ~ 7750 3600
+Connection ~ 8100 3600
+Connection ~ 8450 3600
+Wire Wire Line
+	9000 3950 8600 3950
+Wire Wire Line
+	8600 3950 8600 4250
+Wire Wire Line
+	8600 4250 6600 4250
+Wire Wire Line
+	6600 4250 6600 3900
+Wire Wire Line
+	6600 3900 6250 3900
+Connection ~ 9000 3950
+Text HLabel 4900 4150 0    60   Input ~ 0
+Enable
+Wire Wire Line
+	4900 4150 5000 4150
+Wire Wire Line
+	5000 4150 5000 3700
+Wire Wire Line
+	5000 3700 5050 3700
+Connection ~ 9000 3600
+Text HLabel 3450 3600 0    60   Input ~ 0
+Vin
+$Comp
+L C C?
+U 1 1 5AC9B937
+P 8100 3750
+F 0 "C?" H 8125 3850 50  0000 L CNN
+F 1 "22uF" H 8125 3650 50  0000 L CNN
+F 2 "" H 8138 3600 50  0001 C CNN
+F 3 "" H 8100 3750 50  0001 C CNN
+	1    8100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC9B97A
+P 8450 3750
+F 0 "C?" H 8475 3850 50  0000 L CNN
+F 1 "22uF" H 8475 3650 50  0000 L CNN
+F 2 "" H 8488 3600 50  0001 C CNN
+F 3 "" H 8450 3750 50  0001 C CNN
+	1    8450 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
