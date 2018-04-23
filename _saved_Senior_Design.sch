@@ -259,7 +259,9 @@ F 3 "" H 11750 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11750 1200 12250 1200
+	11750 1200 12050 1200
+Wire Wire Line
+	12050 1200 12250 1200
 $Comp
 L POT RV?
 U 1 1 5ACAE881
@@ -342,7 +344,11 @@ LCD_RS
 NoConn ~ 12250 2600
 NoConn ~ 12250 2700
 Wire Wire Line
-	900  2750 1600 2750
+	900  2750 1100 2750
+Wire Wire Line
+	1100 2750 1400 2750
+Wire Wire Line
+	1400 2750 1600 2750
 Text GLabel 8950 1900 0    60   Input ~ 0
 3v3_En
 Text GLabel 8950 3100 0    60   Input ~ 0
@@ -389,7 +395,9 @@ F 3 "" H 6800 8950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6500 8800 7000 8800
+	6500 8800 6800 8800
+Wire Wire Line
+	6800 8800 7000 8800
 Connection ~ 6800 8800
 $Comp
 L GND #PWR?
@@ -479,30 +487,30 @@ F6 "OUT4" I L 9950 6150 60
 F7 "OUT5" I L 9950 6250 60 
 $EndSheet
 $Sheet
-S 12600 3150 850  1100
+S 6600 2900 850  1100
 U 5ACBFA0B
 F0 "LoadCell" 60
 F1 "LoadCell.sch" 60
-F2 "VDD" I L 12600 3250 60 
-F3 "DOUT" O L 12600 3350 60 
-F4 "PD_SCK" I L 12600 3450 60 
-F5 "E+" I L 12600 3550 60 
-F6 "E-" I L 12600 3650 60 
-F7 "A-" I L 12600 3750 60 
-F8 "A+" I L 12600 3850 60 
-F9 "B+" I L 12600 4050 60 
-F10 "B-" I L 12600 4150 60 
+F2 "VDD" I L 6600 3000 60 
+F3 "DOUT" O L 6600 3100 60 
+F4 "PD_SCK" I L 6600 3200 60 
+F5 "E+" I L 6600 3300 60 
+F6 "E-" I L 6600 3400 60 
+F7 "A-" I L 6600 3500 60 
+F8 "A+" I L 6600 3600 60 
+F9 "B+" I L 6600 3800 60 
+F10 "B-" I L 6600 3900 60 
 $EndSheet
 $Sheet
-S 12650 4500 900  850 
+S 7300 4500 900  850 
 U 5ADDE9BE
 F0 "Bluetooth" 60
 F1 "Bluetooth.sch" 60
-F2 "RXD" I L 12650 4950 60 
-F3 "3.3V" I L 12650 4650 60 
-F4 "TXD" O L 12650 4850 60 
-F5 "STATE" I L 12650 5250 60 
-F6 "EN" I L 12650 5150 60 
+F2 "RXD" I L 7300 4950 60 
+F3 "3.3V" I L 7300 4650 60 
+F4 "TXD" O L 7300 4850 60 
+F5 "STATE" I L 7300 5250 60 
+F6 "EN" I L 7300 5150 60 
 $EndSheet
 $Sheet
 S 11400 3800 800  750 
@@ -534,7 +542,9 @@ $EndComp
 Wire Wire Line
 	3150 6800 3150 7000
 Wire Wire Line
-	3150 7000 3350 7000
+	3150 7000 3250 7000
+Wire Wire Line
+	3250 7000 3350 7000
 Wire Wire Line
 	3250 7000 3250 6800
 Wire Wire Line
@@ -563,15 +573,21 @@ F 3 "" H 1250 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1400 3700 1950 3700
+	1400 3700 1700 3700
 Wire Wire Line
-	1400 3400 1950 3400
+	1700 3700 1950 3700
+Wire Wire Line
+	1400 3400 1700 3400
+Wire Wire Line
+	1700 3400 1950 3400
 Connection ~ 1700 3400
 Connection ~ 1700 3700
 Wire Wire Line
 	1100 3400 1000 3400
 Wire Wire Line
-	1000 3400 1000 3800
+	1000 3400 1000 3700
+Wire Wire Line
+	1000 3700 1000 3800
 Wire Wire Line
 	1000 3700 1100 3700
 Connection ~ 1000 3700
@@ -604,16 +620,26 @@ $EndComp
 Wire Wire Line
 	2050 2600 2050 2650
 Wire Wire Line
-	2050 2650 2400 2650
+	2050 2650 2250 2650
+Wire Wire Line
+	2250 2650 2400 2650
 Wire Wire Line
 	2400 2650 2400 2600
 Connection ~ 2250 2650
 Wire Wire Line
-	1800 2300 2750 2300
+	1800 2300 2050 2300
+Wire Wire Line
+	2050 2300 2400 2300
+Wire Wire Line
+	2400 2300 2750 2300
 Wire Wire Line
 	2750 2300 2750 2800
 Wire Wire Line
-	2750 2800 3400 2800
+	2750 2800 3000 2800
+Wire Wire Line
+	3000 2800 3100 2800
+Wire Wire Line
+	3100 2800 3400 2800
 Connection ~ 2400 2300
 Connection ~ 3000 2800
 Connection ~ 3100 2800
@@ -642,4 +668,42 @@ Text GLabel 9950 6150 0    60   Input ~ 0
 touch_BL
 Text GLabel 9950 6250 0    60   Input ~ 0
 touch_BR
+Text GLabel 7300 5150 0    60   Input ~ 0
+BT_EN
+Text GLabel 7300 5250 0    60   Input ~ 0
+BT_STATE
+Text GLabel 7300 4950 0    60   Input ~ 0
+BT_TX
+Text GLabel 7300 4850 0    60   Input ~ 0
+BT_RX
+Text GLabel 7300 4650 0    60   Input ~ 0
+3V3-BUS
+Text GLabel 1950 6000 0    60   Input ~ 0
+BT_STATE
+Text GLabel 1950 6100 0    60   Input ~ 0
+BT_EN
+Text GLabel 1950 5900 0    60   Input ~ 0
+BT_TX
+Text GLabel 1950 5800 0    60   Input ~ 0
+BT_RX
+Text GLabel 11400 4000 0    60   Input ~ 0
+5V-BUS
+Text GLabel 6600 3000 0    60   Input ~ 0
+5V-BUS
+Text GLabel 6600 3100 0    60   Input ~ 0
+SCALE_DOUT
+Text GLabel 6600 3200 0    60   Input ~ 0
+SCALE_PD_SCK
+Text GLabel 6600 3300 0    60   Input ~ 0
+SCALE_E+
+Text GLabel 6600 3400 0    60   Input ~ 0
+SCALE_E-
+Text GLabel 6600 3500 0    60   Input ~ 0
+SCALE_A-
+Text GLabel 6600 3600 0    60   Input ~ 0
+SCALE_A+
+Text GLabel 4550 3100 2    60   Input ~ 0
+SCALE_DOUT
+Text GLabel 4550 3200 2    60   Input ~ 0
+SCALE_PD_SCK
 $EndSCHEMATC
