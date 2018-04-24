@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 14
+Sheet 1 18
 Title ""
 Date ""
 Rev ""
@@ -943,4 +943,14 @@ Text GLabel 1950 5800 0    60   Input ~ 0
 Motion_Signal1
 Text GLabel 1950 5900 0    60   Input ~ 0
 Motion_Signal2
+Text Notes 6450 800  0    60   ~ 0
+12V DC-DC converter,\nconnected to ramp button,\nconnected to pcb
+Text Notes 8200 1100 0    60   ~ 0
+to notify that power is on
+$Sheet
+S 13700 3800 1300 1100
+U 5AEFA980
+F0 "currentMonitor" 60
+F1 "currentMonitor.sch" 60
+$EndSheet
 $EndSCHEMATC
