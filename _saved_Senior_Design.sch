@@ -943,4 +943,8 @@ Text GLabel 1950 5800 0    60   Input ~ 0
 Motion_Signal1
 Text GLabel 1950 5900 0    60   Input ~ 0
 Motion_Signal2
+Text Notes 6450 800  0    60   ~ 0
+12V DC-DC converter,\nconnected to ramp button,\nconnected to pcb
+Text Notes 8200 1100 0    60   ~ 0
+to notify that power is on
 $EndSCHEMATC
