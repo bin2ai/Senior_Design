@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 18
+Sheet 2 15
 Title ""
 Date ""
 Rev ""
@@ -45,7 +45,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 9300 3600 2    60   Input ~ 0
+Text HLabel 10800 3600 2    60   Input ~ 0
 3V-BUS
 $Comp
 L C C?
@@ -256,7 +256,7 @@ Wire Wire Line
 	6400 3700 6400 3600
 Connection ~ 6400 3600
 Wire Wire Line
-	7250 3600 9300 3600
+	7250 3600 9650 3600
 Connection ~ 7350 3600
 Wire Wire Line
 	7350 3900 6750 3900
@@ -324,4 +324,40 @@ F 3 "" H 8450 3750 50  0001 C CNN
 	1    8450 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R?
+U 1 1 5AFD1690
+P 9800 3600
+F 0 "R?" V 9880 3600 50  0000 C CNN
+F 1 "0.1" V 9700 3600 50  0000 C CNN
+F 2 "" V 9730 3600 50  0001 C CNN
+F 3 "" H 9800 3600 50  0001 C CNN
+	1    9800 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9950 3600 10350 3600
+Wire Wire Line
+	10050 3600 10050 3850
+Connection ~ 10050 3600
+Wire Wire Line
+	9450 3600 9450 3850
+Connection ~ 9450 3600
+Text HLabel 9450 3850 2    60   Input ~ 0
+curMon+
+Text HLabel 10050 3850 2    60   Input ~ 0
+curMon-
+$Comp
+L D_Schottky D?
+U 1 1 5AFD2278
+P 10500 3600
+F 0 "D?" H 10500 3700 50  0000 C CNN
+F 1 "D_Schottky" H 10500 3500 50  0000 C CNN
+F 2 "" H 10500 3600 50  0001 C CNN
+F 3 "" H 10500 3600 50  0001 C CNN
+	1    10500 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10650 3600 10800 3600
 $EndSCHEMATC

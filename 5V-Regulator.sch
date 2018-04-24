@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 18
+Sheet 3 15
 Title ""
 Date ""
 Rev ""
@@ -45,7 +45,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7800 2350 2    60   Input ~ 0
+Text HLabel 8700 2350 2    60   Input ~ 0
 5V-BUS
 $Comp
 L C C?
@@ -256,7 +256,7 @@ Wire Wire Line
 	4900 2450 4900 2350
 Connection ~ 4900 2350
 Wire Wire Line
-	5750 2350 7800 2350
+	5750 2350 7950 2350
 Connection ~ 5850 2350
 Wire Wire Line
 	5850 2650 5250 2650
@@ -324,4 +324,42 @@ F 3 "" H 6950 2500 50  0001 C CNN
 	1    6950 2500
 	1    0    0    -1  
 $EndComp
+Text Notes 7550 3400 0    60   ~ 0
+adjust for diode drop
+$Comp
+L R R?
+U 1 1 5AFD26D8
+P 8100 2350
+F 0 "R?" V 8180 2350 50  0000 C CNN
+F 1 "0.1" V 8000 2350 50  0000 C CNN
+F 2 "" V 8030 2350 50  0001 C CNN
+F 3 "" H 8100 2350 50  0001 C CNN
+	1    8100 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5AFD2779
+P 8500 2350
+F 0 "D?" H 8500 2450 50  0000 C CNN
+F 1 "D_Schottky" H 8500 2250 50  0000 C CNN
+F 2 "" H 8500 2350 50  0001 C CNN
+F 3 "" H 8500 2350 50  0001 C CNN
+	1    8500 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 2350 8650 2350
+Wire Wire Line
+	8350 2350 8250 2350
+Wire Wire Line
+	7850 2350 7850 2750
+Connection ~ 7850 2350
+Wire Wire Line
+	8300 2350 8300 2650
+Connection ~ 8300 2350
+Text HLabel 7850 2750 2    60   Input ~ 0
+curMon+
+Text HLabel 8300 2650 2    60   Input ~ 0
+curMon-
 $EndSCHEMATC
