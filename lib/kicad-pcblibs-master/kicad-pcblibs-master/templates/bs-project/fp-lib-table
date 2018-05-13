@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name chips)(type KiCad)(uri ${BSLIBS}/footprints/chips.pretty)(options "")(descr "Chip Resistor/Caps, etc."))
+  (lib (name connectors_tyco_multilock)(type KiCad)(uri ${BSLIBS}/footprints/connectors_tyco_multilock.pretty)(options "")(descr "Tyco Multilock Connector Range"))
+  (lib (name dpak)(type KiCad)(uri ${BSLIBS}/footprints/dpak.pretty)(options "")(descr "DPAK Transistor and Diode Packages"))
+  (lib (name hybrids)(type KiCad)(uri ${BSLIBS}/footprints/hybrids.pretty)(options "")(descr "Hybrid modules"))
+  (lib (name qfp)(type KiCad)(uri ${BSLIBS}/footprints/qfp.pretty)(options "")(descr "Quad Flat Pack packages"))
+  (lib (name sod)(type KiCad)(uri ${BSLIBS}/footprints/sod.pretty)(options "")(descr "Small Outline Diode packages"))
+  (lib (name soic)(type KiCad)(uri ${BSLIBS}/footprints/soic.pretty)(options "")(descr "Small Outline IC packages"))
