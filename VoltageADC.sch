@@ -1,0 +1,230 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tps562210
+LIBS:senior_design
+LIBS:Senior_Design-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3300 3400 0    60   Input ~ 0
+v+Mon1
+Text HLabel 3300 4600 0    60   Input ~ 0
+v+Mon2
+Text HLabel 3300 5700 0    60   Input ~ 0
+v+Mon3
+Text HLabel 4000 6150 2    60   Output ~ 0
+ADCmon3
+Text HLabel 4000 5050 2    60   Output ~ 0
+ADCmon2
+Text HLabel 4000 3850 2    60   Output ~ 0
+ADCmon1
+$Comp
+L R R1403
+U 1 1 5B018F1E
+P 3700 3650
+F 0 "R1403" V 3780 3650 50  0000 C CNN
+F 1 "10k" V 3700 3650 50  0000 C CNN
+F 2 "" V 3630 3650 50  0001 C CNN
+F 3 "" H 3700 3650 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1408
+U 1 1 5B018F4C
+P 3700 4050
+F 0 "R1408" V 3780 4050 50  0000 C CNN
+F 1 "10k" V 3700 4050 50  0000 C CNN
+F 2 "" V 3630 4050 50  0001 C CNN
+F 3 "" H 3700 4050 50  0001 C CNN
+	1    3700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1401
+U 1 1 5B018F76
+P 3700 4200
+F 0 "#PWR1401" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3700 4050 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1409
+U 1 1 5B01900A
+P 3700 4850
+F 0 "R1409" V 3780 4850 50  0000 C CNN
+F 1 "10k" V 3700 4850 50  0000 C CNN
+F 2 "" V 3630 4850 50  0001 C CNN
+F 3 "" H 3700 4850 50  0001 C CNN
+	1    3700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1410
+U 1 1 5B019010
+P 3700 5250
+F 0 "R1410" V 3780 5250 50  0000 C CNN
+F 1 "1k" V 3700 5250 50  0000 C CNN
+F 2 "" V 3630 5250 50  0001 C CNN
+F 3 "" H 3700 5250 50  0001 C CNN
+	1    3700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1402
+U 1 1 5B019016
+P 3700 5400
+F 0 "#PWR1402" H 3700 5150 50  0001 C CNN
+F 1 "GND" H 3700 5250 50  0000 C CNN
+F 2 "" H 3700 5400 50  0001 C CNN
+F 3 "" H 3700 5400 50  0001 C CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1411
+U 1 1 5B0191B9
+P 3700 5950
+F 0 "R1411" V 3780 5950 50  0000 C CNN
+F 1 "10k" V 3700 5950 50  0000 C CNN
+F 2 "" V 3630 5950 50  0001 C CNN
+F 3 "" H 3700 5950 50  0001 C CNN
+	1    3700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1412
+U 1 1 5B0191BF
+P 3700 6350
+F 0 "R1412" V 3780 6350 50  0000 C CNN
+F 1 "1k" V 3700 6350 50  0000 C CNN
+F 2 "" V 3630 6350 50  0001 C CNN
+F 3 "" H 3700 6350 50  0001 C CNN
+	1    3700 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1403
+U 1 1 5B0191C5
+P 3700 6500
+F 0 "#PWR1403" H 3700 6250 50  0001 C CNN
+F 1 "GND" H 3700 6350 50  0000 C CNN
+F 2 "" H 3700 6500 50  0001 C CNN
+F 3 "" H 3700 6500 50  0001 C CNN
+	1    3700 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3850 3700 3850
+Wire Wire Line
+	3700 3800 3700 3900
+Connection ~ 3700 3850
+Wire Wire Line
+	3700 3500 3700 3400
+Wire Wire Line
+	3700 3400 3300 3400
+Wire Wire Line
+	4000 5050 3700 5050
+Wire Wire Line
+	3700 5000 3700 5100
+Connection ~ 3700 5050
+Wire Wire Line
+	4000 6150 3700 6150
+Wire Wire Line
+	3700 6100 3700 6200
+Connection ~ 3700 6150
+Wire Wire Line
+	3700 4700 3700 4600
+Wire Wire Line
+	3700 4600 3300 4600
+Wire Wire Line
+	3700 5800 3700 5700
+Wire Wire Line
+	3700 5700 3300 5700
+$Comp
+L R R1413
+U 1 1 5B09B0D1
+P 5650 3600
+F 0 "R1413" V 5730 3600 50  0000 C CNN
+F 1 "10k" V 5650 3600 50  0000 C CNN
+F 2 "" V 5580 3600 50  0001 C CNN
+F 3 "" H 5650 3600 50  0001 C CNN
+	1    5650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1414
+U 1 1 5B09B0D7
+P 5650 4000
+F 0 "R1414" V 5730 4000 50  0000 C CNN
+F 1 "1k" V 5650 4000 50  0000 C CNN
+F 2 "" V 5580 4000 50  0001 C CNN
+F 3 "" H 5650 4000 50  0001 C CNN
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1404
+U 1 1 5B09B0DD
+P 5650 4150
+F 0 "#PWR1404" H 5650 3900 50  0001 C CNN
+F 1 "GND" H 5650 4000 50  0000 C CNN
+F 2 "" H 5650 4150 50  0001 C CNN
+F 3 "" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3800 5650 3800
+Wire Wire Line
+	5650 3750 5650 3850
+Connection ~ 5650 3800
+Wire Wire Line
+	5650 3450 5650 3350
+Text HLabel 5650 3350 0    60   Input ~ 0
+v+Mon4
+Text HLabel 5950 3800 2    60   Output ~ 0
+ADCmon4
+$EndSCHEMATC
