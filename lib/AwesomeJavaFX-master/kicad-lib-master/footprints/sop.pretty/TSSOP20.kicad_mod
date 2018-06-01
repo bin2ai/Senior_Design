@@ -1,11 +1,11 @@
-(module TSSOP20 (layer F.Cu)
+(module TSSOP20 (layer F.Cu) (tedit 0)
   (solder_mask_margin 0.0762)
   (solder_paste_margin -0.0254)
   (attr smd)
-  (fp_text reference TSSOP20 (at 0 5.08) (layer F.SilkS)
+  (fp_text reference U1401 (at 0 5.08) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
   )
-  (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
+  (fp_text value FT231XS (at 0 0) (layer F.SilkS) hide
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
   )
   (fp_circle (center -4.2 -3) (end -4 -3) (layer F.SilkS) (width 0.2032))
@@ -33,4 +33,9 @@
   (pad 6 smd rect (at -2.8 0.325) (size 1.6 0.3) (layers F.Cu F.Paste F.SilkS F.Mask))
   (pad 12 smd rect (at 2.8 2.275) (size 1.6 0.3) (layers F.Cu F.Paste F.SilkS F.Mask))
   (pad 11 smd rect (at 2.8 2.925) (size 1.6 0.3) (layers F.Cu F.Paste F.SilkS F.Mask))
+  (model C:/Users/Chase/Documents/GitHub/kicad-packages3D/Package_SO.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

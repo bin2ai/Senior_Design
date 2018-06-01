@@ -1,4 +1,4 @@
-update=4/22/2018 3:15:22 PM
+update=5/14/2018 4:10:14 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=Bluetooth.pretty-master/Bluetooth.pretty-master
+LibDir=Bluetooth.pretty-master/Bluetooth.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
