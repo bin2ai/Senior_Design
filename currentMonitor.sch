@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 14
+Sheet 8 11
 Title ""
 Date ""
 Rev ""
@@ -71,38 +71,20 @@ F3 "Vin+" I L 2350 3250 60
 F4 "Vin-" I L 2350 3350 60 
 F5 "Vout" I L 2350 3600 60 
 $EndSheet
-$Sheet
-S 2400 4200 1000 1000
-U 5AFE2376
-F0 "currentMonitor_Sub" 60
-F1 "currentMonitor_Sub.sch" 60
-F2 "Vin" I L 2400 4450 60 
-F3 "Vin+" I L 2400 4600 60 
-F4 "Vin-" I L 2400 4700 60 
-F5 "Vout" I L 2400 4950 60 
-$EndSheet
 Text HLabel 2350 1750 0    60   Input ~ 0
 Vin
 Text HLabel 2350 3100 0    60   Input ~ 0
-Vin
-Text HLabel 2400 4450 0    60   Input ~ 0
 Vin
 Text HLabel 2350 1900 0    60   Input ~ 0
 Vin+_1
 Text HLabel 2350 3250 0    60   Input ~ 0
 Vin+_2
-Text HLabel 2400 4600 0    60   Input ~ 0
-Vin+_3
 Text HLabel 2350 2000 0    60   Input ~ 0
 Vin-_1
 Text HLabel 2350 3350 0    60   Input ~ 0
 Vin-_2
-Text HLabel 2400 4700 0    60   Input ~ 0
-Vin-_3
 Text HLabel 2350 2250 0    60   Input ~ 0
 Vout1
 Text HLabel 2350 3600 0    60   Input ~ 0
 Vout2
-Text HLabel 2400 4950 0    60   Input ~ 0
-Vout3
 $EndSCHEMATC
