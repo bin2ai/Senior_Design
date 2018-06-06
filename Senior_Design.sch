@@ -215,11 +215,11 @@ F0 "USB" 60
 F1 "USB.sch" 60
 F2 "5V" I L 8550 3800 60 
 $EndSheet
-Text GLabel 4250 3500 0    60   Input ~ 0
+Text GLabel 4750 3700 2    60   Input ~ 0
 touch_1
-Text GLabel 4250 3600 0    60   Input ~ 0
+Text GLabel 4750 3800 2    60   Input ~ 0
 touch_2
-Text GLabel 4250 3700 0    60   Input ~ 0
+Text GLabel 4250 3800 0    60   Input ~ 0
 touch_3
 Text GLabel 10600 3400 0    60   Input ~ 0
 BT_EN
@@ -551,7 +551,7 @@ F 3 "" H 4500 2450 50  0001 C CNN
 	1    4500 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 3600 2    60   Input ~ 0
+Text GLabel 4250 3600 0    60   Input ~ 0
 GND
 Text Notes 1100 3100 0    60   ~ 0
 use AT42QT1070\n7-channel i2c qtouch ic\nSTANDALONE MODE (SEE ADAFRUIT)
@@ -862,7 +862,7 @@ Text GLabel 10350 1100 0    60   Input ~ 0
 5V-BUS
 Text GLabel 10600 2900 0    60   Input ~ 0
 3V3-BUS
-Text GLabel 4750 3500 2    60   Input ~ 0
+Text GLabel 4250 3500 0    60   Input ~ 0
 5V-BUS
 $Comp
 L GND #PWR017
@@ -969,7 +969,6 @@ Text GLabel 11950 7750 2    60   Input ~ 0
 5V_curMon_ADC
 Text GLabel 11950 7850 2    60   Input ~ 0
 5V_curMon_USBLINE_ADC
-NoConn ~ 4750 3700
 $Comp
 L Conn_01x03 J109
 U 1 1 5B37C06B
@@ -1135,9 +1134,9 @@ Wire Wire Line
 	12750 7950 11950 7950
 Text GLabel 13150 9250 2    60   Input ~ 0
 breakout_1A
-Text GLabel 4250 3800 0    60   Input ~ 0
+Text GLabel 4750 3500 2    60   Input ~ 0
 touch_4
-Text GLabel 4750 3800 2    60   Input ~ 0
+Text GLabel 4750 3600 2    60   Input ~ 0
 touch_5
 Wire Wire Line
 	9350 7050 9250 7050
@@ -1362,4 +1361,6 @@ F8 "~EN" I L 10600 3400 60
 $EndSheet
 Wire Wire Line
 	13150 2650 12850 2650
+Text GLabel 4250 3700 0    60   Input ~ 0
+GND
 $EndSCHEMATC
