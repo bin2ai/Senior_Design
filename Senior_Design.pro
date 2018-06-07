@@ -1,4 +1,4 @@
-update=5/14/2018 4:10:14 PM
+update=6/6/2018 10:34:24 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=Bluetooth.pretty-master/Bluetooth.pretty
+LibDir=lib/SparkFun-Kicad-Libraries-master
 [eeschema/libraries]
 LibName1=power
 LibName2=device

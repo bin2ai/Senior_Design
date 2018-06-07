@@ -1,0 +1,29 @@
+
+This is what I’m hoping to accomplish.
+- $$$ we double check that I made the necessary changes to the schematic from your review
+- we quickly scan through the rest of the schematic, and any changes that were made
+- we go over component associated footprints and start building a BOM that accurately describes the footprints selected. 
+- we discuss component placement to maximize effectiveness of our design. That means also going through data sheets for suggested layout design for the regulators etc.
+- we add test points/solder bridges to necessary locations
+- we add silk screen text for debugging purposes
+- then I finalize the PCB by connecting the traces. (edited)
+I have an exam tomorrow so I’m going to have to take a break on the pcb until then. But just to add to our discussion tomorrow, I think I have an unnecessary button for the Bluetooth module and the footprint size of some components like the shunt resistor May be too small. (edited)
+I’ll teach you guys how to go through mouser for selecting components.
+
+
+6-6-2018
+
+noticed that TX1 and RX1 are connected to the SPI (ISP Lines), there are 3 spi lines
+excluding rst,vcc,gnd. if we switch bluetooth uart to uart 1 (instead of 0) then
+we could use the sck line as an extra...
+
+LEDs
+
+R 2.0V, 20mA  -> ~500ohms
+G 3.2V, 20mA  -> ~440ohms
+Y 2.0V, 20mA  -> ~500ohms
+match appropriate led (color) with vcc level and led vf to get desired 20mA and
+under resistor power rating.
+
+INFRARED/PHOTODIODE
+https://www.amazon.com/dp/B01HGIQ8NG/ref=sxts_k2p-hero-vn-pb_bs_1?pf_rd_m=ATVPDKIKX0DER&pf_rd_p=8477664412492203526&pd_rd_wg=i3cqo&pf_rd_r=SW6GG8CB3BA56TFTCCGH&pf_rd_s=desktop-sx-top-slot&pf_rd_t=301&pd_rd_i=B01HGIQ8NG&pd_rd_w=6bCUH&pf_rd_i=photodiode&pd_rd_r=227a136b-bce0-42b5-8c59-d56ddcceabf9&ie=UTF8&qid=1528353485&sr=1
