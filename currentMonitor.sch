@@ -75,16 +75,40 @@ Text HLabel 2350 1750 0    60   Input ~ 0
 Vin
 Text HLabel 2350 3100 0    60   Input ~ 0
 Vin
-Text HLabel 2350 1900 0    60   Input ~ 0
+Text HLabel 1900 1900 0    60   Input ~ 0
 Vin+_1
-Text HLabel 2350 3250 0    60   Input ~ 0
+Text HLabel 1900 3250 0    60   Input ~ 0
 Vin+_2
-Text HLabel 2350 2000 0    60   Input ~ 0
+Text HLabel 1900 2000 0    60   Input ~ 0
 Vin-_1
-Text HLabel 2350 3350 0    60   Input ~ 0
+Text HLabel 1900 3350 0    60   Input ~ 0
 Vin-_2
-Text HLabel 2350 2250 0    60   Input ~ 0
+Text HLabel 1900 2250 0    60   Input ~ 0
 Vout1
-Text HLabel 2350 3600 0    60   Input ~ 0
+Text HLabel 1900 3600 0    60   Input ~ 0
 Vout2
+Text Label 2100 3250 0    60   ~ 0
+2+
+Text Label 2100 3350 0    60   ~ 0
+2-
+Wire Wire Line
+	1900 3350 2350 3350
+Wire Wire Line
+	1900 3250 2350 3250
+Wire Wire Line
+	2350 2000 1900 2000
+Wire Wire Line
+	1900 1900 2350 1900
+Text Label 2000 1900 0    60   ~ 0
+1+
+Text Label 2150 2000 0    60   ~ 0
+1-
+Wire Wire Line
+	1900 3600 2350 3600
+Wire Wire Line
+	1900 2250 2350 2250
+Text Label 2050 3600 0    60   ~ 0
+2out
+Text Label 2100 2250 0    60   ~ 0
+1out
 $EndSCHEMATC

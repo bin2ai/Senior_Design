@@ -1247,6 +1247,35 @@ Text Notes 6550 6350 0    60   ~ 0
 was 330 ohm\n
 Text Notes 1850 2050 0    60   ~ 0
 NOW USING 4.7uF  instead of 10uF (mouser out)
+Text GLabel 10600 2900 0    60   Input ~ 0
+5V-BUS
+Text GLabel 11950 8950 2    60   Input ~ 0
+LED_Din
+Text GLabel 13550 7850 2    60   Input ~ 0
+5V-BUS
+Text GLabel 8750 2750 0    60   Input ~ 0
+5V-BUS
+Text GLabel 10600 4550 0    60   Input ~ 0
+Motion_Signal
+Text GLabel 10200 5000 0    60   Input ~ 0
+Motion_Signal
+Text Label 2450 7100 0    60   ~ 0
+_5V_USB
+Text Label 2500 5950 0    60   ~ 0
+_5V_SYS
+Text GLabel 8550 3800 0    60   Input ~ 0
+5V-BUS_USBLINE
+$Comp
+L C C101
+U 1 1 5B1B6CF5
+P 6000 5350
+F 0 "C101" H 6025 5450 50  0000 L CNN
+F 1 "?uF" H 6025 5250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6038 5200 50  0001 C CNN
+F 3 "" H 6000 5350 50  0001 C CNN
+	1    6000 5350
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	3100 1600 3100 1550
 Connection ~ 2450 1600
@@ -1540,24 +1569,21 @@ Wire Wire Line
 Connection ~ 4850 5300
 Wire Wire Line
 	4850 6150 5050 6150
-Text GLabel 10600 2900 0    60   Input ~ 0
-5V-BUS
-Text GLabel 11950 8950 2    60   Input ~ 0
-LED_Din
 Wire Wire Line
 	6750 6150 6550 6150
-Text GLabel 13550 7850 2    60   Input ~ 0
-5V-BUS
-Text GLabel 8750 2750 0    60   Input ~ 0
-5V-BUS
-Text GLabel 10600 4550 0    60   Input ~ 0
-Motion_Signal
-Text GLabel 10200 5000 0    60   Input ~ 0
-Motion_Signal
-Text Label 2450 7100 0    60   ~ 0
-_5V_USB
-Text Label 2500 5950 0    60   ~ 0
-_5V_SYS
-Text GLabel 8550 3800 0    60   Input ~ 0
-5V-BUS_USBLINE
+Wire Wire Line
+	5650 5200 6000 5200
+$Comp
+L GND #PWR027
+U 1 1 5B1B8325
+P 6000 5550
+F 0 "#PWR027" H 6000 5300 50  0001 C CNN
+F 1 "GND" H 6000 5400 50  0000 C CNN
+F 2 "" H 6000 5550 50  0001 C CNN
+F 3 "" H 6000 5550 50  0001 C CNN
+	1    6000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5500 6000 5550
 $EndSCHEMATC
