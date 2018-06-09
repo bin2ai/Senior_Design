@@ -452,7 +452,7 @@ U 1 1 5AF93E9C
 P 1100 4350
 F 0 "MH102" H 1100 4450 50  0000 C CNN
 F 1 "Mounting Hole" V 1200 4350 50  0000 C CNN
-F 2 "Connectors:Pin_d1.3mm_L11.0mm" H 1100 4350 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 1100 4350 50  0001 C CNN
 F 3 "" H 1100 4350 50  0001 C CNN
 	1    1100 4350
 	1    0    0    -1  
@@ -463,7 +463,7 @@ U 1 1 5AF944A1
 P 1600 4350
 F 0 "MH104" H 1600 4450 50  0000 C CNN
 F 1 "Mounting Hole" V 1700 4350 50  0000 C CNN
-F 2 "Connectors:Pin_d1.3mm_L11.0mm" H 1600 4350 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 1600 4350 50  0001 C CNN
 F 3 "" H 1600 4350 50  0001 C CNN
 	1    1600 4350
 	1    0    0    -1  
@@ -474,7 +474,7 @@ U 1 1 5AF96247
 P 1050 4850
 F 0 "MH101" H 1050 4950 50  0000 C CNN
 F 1 "Mounting Hole" V 1150 4850 50  0000 C CNN
-F 2 "Connectors:Pin_d1.3mm_L11.0mm" H 1050 4850 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 1050 4850 50  0001 C CNN
 F 3 "" H 1050 4850 50  0001 C CNN
 	1    1050 4850
 	1    0    0    -1  
@@ -485,7 +485,7 @@ U 1 1 5AF9643B
 P 1550 4850
 F 0 "MH103" H 1550 4950 50  0000 C CNN
 F 1 "Mounting Hole" V 1650 4850 50  0000 C CNN
-F 2 "Connectors:Pin_d1.3mm_L11.0mm" H 1550 4850 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 1550 4850 50  0001 C CNN
 F 3 "" H 1550 4850 50  0001 C CNN
 	1    1550 4850
 	1    0    0    -1  
@@ -1059,7 +1059,7 @@ F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 3488 1250 50  0001 C CNN
 F 3 "" H 3450 1400 50  0001 C CNN
 F 4 "EMK212ABJ106MG-T" H 500 3550 60  0001 C CNN "PN"
 	1    3450 1400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Sheet
 S 10600 2750 900  850 
@@ -1271,10 +1271,10 @@ U 1 1 5B1B6CF5
 P 6000 5350
 F 0 "C101" H 6025 5450 50  0000 L CNN
 F 1 "?uF" H 6025 5250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6038 5200 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 6038 5200 50  0001 C CNN
 F 3 "" H 6000 5350 50  0001 C CNN
 	1    6000 5350
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3100 1600 3100 1550
@@ -1284,9 +1284,8 @@ Wire Wire Line
 Connection ~ 2750 1250
 Wire Wire Line
 	2750 1250 2750 1150
-Connection ~ 2450 1250
 Wire Wire Line
-	2150 1250 3450 1250
+	2600 1250 3450 1250
 Connection ~ 2750 1600
 Wire Wire Line
 	2150 1600 3450 1600
@@ -1586,4 +1585,41 @@ F 3 "" H 6000 5550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 5500 6000 5550
+$Comp
+L D_Schottky D107
+U 1 1 5B1BDE41
+P 2450 1250
+F 0 "D107" H 2450 1350 50  0000 C CNN
+F 1 "D_Schottky" H 2450 1150 50  0000 C CNN
+F 2 "seniorDesign:SOD-128" H 2450 1250 50  0001 C CNN
+F 3 "RSX301LAM30TR" H 2450 1250 50  0001 C CNN
+	1    2450 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 1250 2150 1250
+$Comp
+L Conn_01x01 MH106
+U 1 1 5B1C768E
+P 2600 9900
+F 0 "MH106" H 2600 10000 50  0000 C CNN
+F 1 "IR LIGHT BLOCKER MOUNT" H 2600 9800 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 2600 9900 50  0001 C CNN
+F 3 "" H 2600 9900 50  0001 C CNN
+	1    2600 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 MH105
+U 1 1 5B1C7834
+P 2600 9600
+F 0 "MH105" H 2600 9700 50  0000 C CNN
+F 1 "IR LIGHT BLOCKER MOUNT" H 2600 9500 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 2600 9600 50  0001 C CNN
+F 3 "" H 2600 9600 50  0001 C CNN
+	1    2600 9600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2400 9600
+NoConn ~ 2400 9900
 $EndSCHEMATC
