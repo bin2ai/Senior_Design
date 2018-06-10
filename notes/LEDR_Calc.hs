@@ -3,3 +3,4 @@
 i = 0.020
 ledRes vcc vf = (vcc - vf ) / i
 ledCur vcc vf r = 1000*((vcc - vf) / r)
+resPow r i = (i * i) * r / 1000  :: Float

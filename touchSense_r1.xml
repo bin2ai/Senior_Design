@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/Chase/Documents/KiCAD/Senior_Design/touchSense_r1.sch</source>
+    <date>6/10/2018 2:10:30 PM</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>touchSense_r1.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C0</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>4.7nF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C1</tstamp>
+    </comp>
+    <comp ref="GS1">
+      <value>GS3</value>
+      <footprint>Connectors:GS3</footprint>
+      <libsource lib="conn" part="GS3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C3</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1K</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C4</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C5</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>GS2</value>
+      <footprint>Connectors:GS2</footprint>
+      <libsource lib="conn" part="GS2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C8</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97C9</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1K</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97CA</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>5pF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97CC</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AT42QT1010-TSHR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <libsource lib="atmel" part="AT42QT1010-TSHR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97CD</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>breakout</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A97CF</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>cap/daisy</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1ABB90</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>GS2</value>
+      <footprint>Connectors:GS2</footprint>
+      <libsource lib="conn" part="GS2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1AC19F</tstamp>
+    </comp>
+    <comp ref="J101">
+      <value>Hatched_Fill</value>
+      <footprint>seniorDesign:HATCHED_FILL_10mm</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1C6C17</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="atmel" part="AT42QT1010-TSHR">
+      <aliases>
+        <alias>AT42QT1011-TSHR</alias>
+      </aliases>
+      <description>Single-key Touch Sensor, SOT-23-6</description>
+      <docs>http://www.atmel.com/Images/Atmel-9541-AT42-QTouch-BSW-AT42QT1010_Datasheet.pdf</docs>
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AT42QT1010-TSHR</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="SNSK" type="passive"/>
+        <pin num="4" name="SNS" type="passive"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="SYNC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="GS2">
+      <description>2-pin jumper/solder bridge</description>
+      <footprints>
+        <fp>GS*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">GS2</field>
+        <field name="Footprint">Connectors:GS2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G1" type="passive"/>
+        <pin num="2" name="G2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="GS3">
+      <description>3-pin jumper/solder bridge</description>
+      <footprints>
+        <fp>GS*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">GS3</field>
+        <field name="Footprint">Connectors:GS3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G1" type="passive"/>
+        <pin num="2" name="G2" type="passive"/>
+        <pin num="3" name="G3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="atmel">
+      <uri>C:\Program Files\KiCad\share\kicad\library\atmel.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/VDD">
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="2" name="/OUT1">
+      <node ref="U1" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="4" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="GS1" pin="3"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J4" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J101" pin="1"/>
+    </net>
+    <net code="7" name="/internal">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="8" name="/CAP_PAD">
+      <node ref="C3" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="9" name="/VDD">
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="10" name="Net-(GS1-Pad2)">
+      <node ref="GS1" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="11" name="/VDD">
+      <node ref="GS1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="13" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="14" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="15" name="/VDD">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+  </nets>
+</export>

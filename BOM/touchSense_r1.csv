@@ -1,0 +1,33 @@
+Title,,,,
+Revision,,,,
+Date,,,,
+Generated,6/10/2018 14:10,,,
+Company,,,,
+Comment 1,,,,
+Comment 2,,,,
+Comment 3,,,,
+Comment 4,,,,
+Total Parts,14,,,
+Total Unique Parts,12,,,
+,,,,
+,,,,
+,,,,
+Ref,Qty,Value,Footprint,Datasheet
+C1 ,1,0.1uF,Capacitors_SMD:C_0603,81-GRM39Y104Z25D
+C2 ,1,4.7nF,Capacitors_SMD:C_0603,885012206063
+C3 ,1,5pF,Capacitors_SMD:C_0603,81-GJM0335C1E5R0CB1D
+D1 ,1,LED,LEDs:LED_0805,
+GS1 ,1,GS3,Connectors:GS3,
+J1 ,1,breakout,Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm,
+J2 J3 ,2,GS2,Connectors:GS2,
+J4 ,1,cap/daisy,Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm,
+J101 ,1,Hatched_Fill,seniorDesign:HATCHED_FILL_10mm,
+R1 R2 ,2,1K,Resistors_SMD:R_0603,
+R3 ,1,10K,Resistors_SMD:R_0603,755-ESR03EZPJ103
+U1 ,1,AT42QT1010-TSHR,TO_SOT_Packages_SMD:SOT-23-6,AT42QT1010-MAH 
+,,,,
+R,150,603,603-AC0603FR-07150RL ,
+LED,RED,REV GUL,78-VLRK31Q1R2-GS08 ,
+,,,,
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git),,,,
+Generated 6/10/2018 2:10:30 PM,,,,
